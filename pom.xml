@@ -11,6 +11,7 @@
 
   <modules>
     <module>actuator-observer</module>
+    <module>devtools</module>
   </modules>
 
   <dependencyManagement>
