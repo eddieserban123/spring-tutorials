@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  spring-app:
+    image: my-springapp:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    networks:
+      - my-network
+
+  prometheus:
+    image: prom/prometheus:latest
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+    ports:
+      - "9090:9090"
+    networks:
+      - my-network
+
+networks:
+  my-network:
+    driver: bridge
