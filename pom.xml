@@ -34,7 +34,9 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-core</artifactId>
       </dependency>
+
     </dependencies>
+
   </dependencyManagement>
 
   <build>
@@ -48,6 +50,17 @@
           <target>17</target> <!-- Set to match the source version -->
         </configuration>
       </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.3.1</version> <!-- Ensure you have a recent version -->
+        <configuration>
+          <forkCount>1</forkCount> <!-- Ensure tests are not run in parallel if that's an issue -->
+          <reuseForks>false</reuseForks> <!-- Ensure that each test has a clean context -->
+        </configuration>
+      </plugin>
+
     </plugins>
     <directory>target</directory>
     <outputDirectory>target/classes</outputDirectory>

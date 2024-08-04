@@ -1,7 +1,7 @@
-package com.example.retry.controller;
+package com.example.session.controller;
 
 
-import com.example.retry.service.MyService;
+import com.example.session.service.MyService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 

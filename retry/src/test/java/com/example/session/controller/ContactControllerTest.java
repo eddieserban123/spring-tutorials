@@ -1,4 +1,4 @@
-package com.example.retry.controller;
+package com.example.session.controller;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

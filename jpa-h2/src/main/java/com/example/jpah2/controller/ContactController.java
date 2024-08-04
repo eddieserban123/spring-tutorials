@@ -1,4 +1,4 @@
-package com.example.retry.controller;
+package com.example.jpah2.controller;
 
 import com.example.jpah2.model.Contact;
 import com.example.jpah2.repository.ContactRepository;

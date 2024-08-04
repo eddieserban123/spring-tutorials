@@ -1,4 +1,4 @@
-package com.example.retry;
+package com.example.session;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

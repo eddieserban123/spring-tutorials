@@ -1,8 +1,8 @@
-package com.example.retry.controller;
+package com.example.jpah2.controller;
 
+import com.example.jpah2.SpringMainApplication;
 import com.example.jpah2.model.Contact;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.params.shadow.com.univocity.parsers.annotations.Validate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -15,7 +15,7 @@ import java.util.List;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT,  classes = SpringMainApplication.class)
 public class ContactControllerTest {
 
         @Value(value = "${local.server.port}")

@@ -1,17 +1,15 @@
-Spring Boot DevTools is a helpful library that provides several features to enhance the development experience, 
-including automatic restarts, live reload, and configurations for development environments
+a simple spring app that keeps sessions in redis
 
-beside adding
-<dependency>
-<groupId>org.springframework.boot</groupId>
-<artifactId>spring-boot-devtools</artifactId>
-<optional>true</optional>
-</dependency>
+some problems with docker-compose: 
+ if i boot up spring app and redis node in the same docker network somehow spring cannot connect to redis
+so i leave it only the redis in the docker compose 
 
-you need also to add:
-in properties this:
+redis-cli -h localhost -p 6379 
 
-spring.devtools.restart.enabled=true
-spring.devtools.livereload.enabled=true
+KEYS *
+HGETALL <>
 
-And after running go change myService definition !
+pay attention to tests too !
+
+
+

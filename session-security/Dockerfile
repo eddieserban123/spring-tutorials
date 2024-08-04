@@ -7,11 +7,11 @@ WORKDIR /app
 
 # Copy the JAR file from the target directory of your project into the container
 # Replace 'your-app.jar' with the actual name of your JAR file
-COPY target/demo-actuator-0.0.1-SNAPSHOT.jar /app/
+COPY target/session-security-1.0.0.jar /app/
 
 # Expose the port that the application will run on
 EXPOSE 8080
 
 # Run the JAR file
-ENTRYPOINT ["java", "-jar", "/app/demo-actuator-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java", "-jar", "/app/session-security-1.0.0.jar"]
 

@@ -1,4 +1,4 @@
-package com.example.retry.service;
+package com.example.session.service;
 
 import org.springframework.retry.annotation.Recover;
 import org.springframework.retry.annotation.Retryable;

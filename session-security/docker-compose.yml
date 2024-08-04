@@ -1,25 +1,28 @@
 version: '3.8'
 
 services:
-  spring-app:
-    image: my-springapp:latest
-    build:
-      context: .
-      dockerfile: Dockerfile
-    ports:
-      - "8080:8080"
-    networks:
-      - my-network
+#  spring-app:
+#    image: my-springapp:latest
+#    build:
+#      context: .
+#      dockerfile: Dockerfile
+#    ports:
+#      - "8080:8080"
+#    networks:
+#      - my-network
 
-  prometheus:
-    image: prom/prometheus:latest
+  redis:
+    image: "redis:latest"
+    container_name: "redis_container"
+    ports:
+      - "6379:6379"
     volumes:
-      - ./prometheus.yml:/etc/prometheus/prometheus.yml
-    ports:
-      - "9090:9090"
+      - redis_data:/data
     networks:
       - my-network
 
+volumes:
+  redis_data: { }
 networks:
   my-network:
     driver: bridge
