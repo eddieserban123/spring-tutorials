@@ -1,7 +1,7 @@
-package com.example.jpah2.controller;
+package com.example.controller;
 
 import com.example.jpah2.SpringMainApplication;
-import com.example.jpah2.model.Contact;
+import com.example.model.Contact;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;

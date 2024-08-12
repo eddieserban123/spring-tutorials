@@ -1,6 +1,6 @@
-package com.example.jpah2.repository;
+package com.example.repository;
 
-import com.example.jpah2.model.Contact;
+import com.example.model.Contact;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface ContactRepository extends JpaRepository<Contact, Long> {

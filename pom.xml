@@ -19,6 +19,11 @@
     <module>jpa-h2</module>
     <module>retry</module>
     <module>session-security</module>
+    <module>security-oauth/authorization-server</module>
+    <module>security-oauth/resource-server</module>
+    <module>security-oauth/client</module>
+    <module>oauth2-github-google</module>
+    <module>jwt</module>
   </modules>
 
   <dependencyManagement>

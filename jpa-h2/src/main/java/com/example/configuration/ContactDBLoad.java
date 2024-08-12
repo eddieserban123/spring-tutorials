@@ -1,7 +1,7 @@
-package com.example.jpah2.configuration;
+package com.example.configuration;
 
-import com.example.jpah2.model.Contact;
-import com.example.jpah2.repository.ContactRepository;
+import com.example.model.Contact;
+import com.example.repository.ContactRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
