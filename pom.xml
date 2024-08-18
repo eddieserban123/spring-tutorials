@@ -24,6 +24,7 @@
     <module>security-oauth/client</module>
     <module>oauth2-github-google</module>
     <module>jwt</module>
+    <module>testing</module>
   </modules>
 
   <dependencyManagement>
