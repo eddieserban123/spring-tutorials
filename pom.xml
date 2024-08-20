@@ -25,6 +25,7 @@
     <module>oauth2-github-google</module>
     <module>jwt</module>
     <module>testing</module>
+    <module>jdbc-client-vs-spring-data</module>
   </modules>
 
   <dependencyManagement>
