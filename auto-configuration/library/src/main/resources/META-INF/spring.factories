@@ -1,0 +1,2 @@
+# Automatically configure MyComponent when the JAR is included in a Spring Boot project
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.example.configuration.MyComponentAutoConfiguration

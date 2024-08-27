@@ -26,6 +26,10 @@
     <module>jwt</module>
     <module>testing</module>
     <module>jdbc-client-vs-spring-data</module>
+    <module>auto-configuration/library</module>
+    <module>auto-configuration/server</module>
+    <module>mongodb/mongoTemplate</module>
+    <module>mongodb/mongoRepository</module>
   </modules>
 
   <dependencyManagement>
