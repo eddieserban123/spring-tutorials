@@ -30,6 +30,8 @@
     <module>auto-configuration/server</module>
     <module>mongodb/mongoTemplate</module>
     <module>mongodb/mongoRepository</module>
+    <module>cloud/basicexample/configserver</module>
+    <module>cloud/basicexample/configclient</module>
   </modules>
 
   <dependencyManagement>
@@ -37,7 +39,7 @@
       <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.3.2</version>
+        <version>3.3.3</version>
         <scope>import</scope>
         <type>pom</type>
       </dependency>
